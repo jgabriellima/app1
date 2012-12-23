@@ -7,6 +7,8 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
+  , io = require('socket.io')
+, mongojs = require('mongojs')
   , path = require('path');
 
 var app = express();
